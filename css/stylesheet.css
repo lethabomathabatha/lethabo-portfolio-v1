@@ -53,3 +53,23 @@ header {
     var(--color-light-blue)
     var(--color-light-purple));
 }
+
+.main-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  background-color: antiquewhite;
+  padding: 30px;
+
+}
+
+.first-section {
+  grid-column: 1 / 1;
+  grid-row: 1;
+  background-color: cadetblue;
+}
+
+.second-section {
+  grid-column: 3/4;
+  grid-row: 1;
+  background-color: seagreen;
+}
