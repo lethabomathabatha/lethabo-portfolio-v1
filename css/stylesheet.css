@@ -57,7 +57,7 @@ header {
 .main-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  background-color: antiquewhite;
+  background-color: rgb(111, 103, 103);
   padding: 30px;
   gap: 30px;
 }
@@ -228,6 +228,10 @@ header {
 }
 
 /*Project numbers*/
+
+.third-section {
+
+}
 .project-number img {
   grid-column: 4/4;
   display: block;
@@ -254,6 +258,7 @@ header {
   justify-content: space-between;
   padding: 40px;
   background-color: sandybrown;
+  margin-top: 20px;
 }
 
 .skill1 {
@@ -317,7 +322,7 @@ header {
 }
 
 .javascript {
-  width: 400px;
+  width: 500px;
   background-color: lightblue;
   border: 2px solid white;
   
@@ -328,7 +333,22 @@ header {
   display: block;
   height: 20px;
   background-color: white;
-  width: 80px;
+  width: 30px;
   position: absolute;
  
+}
+
+/*Fourth Section*/
+
+.fourth-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: darkkhaki;
+  padding: 40px;
+  margin-top: 20px;
+}
+
+.contact-form {
+  grid-template-columns: 2 / 3;
+  background-color: yellow;
 }
