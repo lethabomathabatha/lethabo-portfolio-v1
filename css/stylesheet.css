@@ -84,6 +84,7 @@ header {
   padding: 30px;
   border: 2px solid black;
   position: relative;
+  margin-top: 110px;
 }
 
 /*Slide 1*/
@@ -120,7 +121,7 @@ header {
 
 .slide-one h2{
   grid-column: 3/4;
-  grid-row: 1;
+  grid-row: 2;
   align-self: center;
 }
 
@@ -137,6 +138,7 @@ header {
   padding: 30px;
   border: 2px solid black;
   position: relative;
+  margin-top: 110px;
 }
 
 .slide-two img{
@@ -171,7 +173,7 @@ header {
 
 .slide-two h2{
   grid-column: 3/4;
-  grid-row: 1;
+  grid-row: 2;
   align-self: center;
 }
 
@@ -186,6 +188,7 @@ header {
   padding: 30px;
   border: 2px solid black;
   position: relative;
+  margin-top: 110px;
 }
 
 .slide-three img{
@@ -220,18 +223,55 @@ header {
 
 .slide-three h2{
   grid-column: 3/4;
-  grid-row: 1;
+  grid-row: 2;
   align-self: center;
 }
 
 /*Project numbers*/
-.project-number {
-  content: "";
-    display: block;
-    position: absolute;
-    top: -3rem;
+.project-number img {
+  grid-column: 4/4;
+  display: block;
+  position: absolute;
+  top: -13rem;
     right: -10rem;
     font-size: 20px;
+    width: 400px;
+    height: 350px;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+
+.project-number img:hover {
+  opacity: 0.5;
+}
+
+
+/*Skills Section*/
+.third-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.skill {
+  width: calc(50% - 10px);
+  margin-bottom: 10px;
+}
+
+.skill-bar {
+  height: 10px;
+  border-radius: 5px;
+}
+
+.html {
+  width: 90%;
+  background-color: #4CAF50;
+}
+
+.css {
+  width: 80%;
+  background-color: #2196F3;
+  border: 2px solid white;
 }
