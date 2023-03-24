@@ -249,29 +249,86 @@ header {
 
 /*Skills Section*/
 .third-section {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
-  flex-wrap: wrap;
   padding: 40px;
+  background-color: sandybrown;
 }
 
-.skill {
+.skill1 {
   width: calc(50% - 10px);
   margin-bottom: 10px;
+  grid-column: 1/2;
+  grid-row: 2
+}
+
+.skill2 {
+  width: calc(50% - 10px);
+  margin-bottom: 10px;
+  grid-column: 2/3;
+  grid-row: 2;
+}
+
+.skill3 {
+  width: calc(50% - 10px);
+  margin-bottom: 10px;
+  grid-column: 1/2;
+  grid-row: 3;
 }
 
 .skill-bar {
-  height: 10px;
-  border-radius: 5px;
+  height: 20px;
+  border-radius: 3px;
+  width: 100%;
 }
 
 .html {
-  width: 90%;
+  width: 500px;
   background-color: #4CAF50;
+  border: 2px solid white;
+}
+
+.html::after {
+  content: "";
+  display: block;
+  height: 20px;
+  background-color: white;
+  width: 55px;
+  position: absolute;
+  
 }
 
 .css {
-  width: 80%;
+  width: 400px;
   background-color: #2196F3;
   border: 2px solid white;
+  
+}
+
+.css::after {
+  content: "";
+  display: block;
+  height: 20px;
+  background-color: white;
+  width: 80px;
+  position: absolute;
+ 
+}
+
+.javascript {
+  width: 400px;
+  background-color: lightblue;
+  border: 2px solid white;
+  
+}
+
+.javascript::after {
+  content: "";
+  display: block;
+  height: 20px;
+  background-color: white;
+  width: 80px;
+  position: absolute;
+ 
 }
