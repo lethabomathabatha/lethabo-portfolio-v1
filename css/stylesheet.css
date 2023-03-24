@@ -342,13 +342,81 @@ header {
 
 .fourth-section {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   background-color: darkkhaki;
   padding: 40px;
   margin-top: 20px;
 }
 
+
+.form-image{
+  grid-column: 2/3;
+  font-size: 20px;
+  background-image: url(/images/form-background.png);
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: auto;
+  background-color: saddlebrown;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.form-image p {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 40px;
+}
+
 .contact-form {
-  grid-template-columns: 2 / 3;
+  grid-column: 3 / 4;
   background-color: yellow;
+  padding: 40px;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.contact-form p {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.external-links {
+  margin-top: 30px;
+  background-color: silver;
+}
+
+.external-links img {
+  width: 30px;
+  height: 30px;
+}
+
+.logos {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+.logos img {
+width: 40px;
+height: 40px;
+}
+
+.logos img:hover {
+animation-name: logos;
+animation-duration: 0.2s;
+animation-iteration-count: 2;
+animation-play-state:running;
+}
+
+@keyframes logos {
+0% {
+  transform: rotate(0deg);
+}
+50% {
+  transform: rotate(90deg);
+}
+100% {
+  transform: rotate(180deg);
+}
 }
