@@ -379,8 +379,49 @@ header {
   font-weight: bold;
 }
 
+input[type=text] {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid grey;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgba(255, 255, 255, 0.001);
+  width: 300px;
+}
+
+input[type=email] {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid grey;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgba(255, 255, 255, 0.001);
+  width: 300px;
+}
+
+input[textarea=] {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(189, 19, 19);
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: yellowgreen;
+  width: 300px;
+}
+
+input[type=text]:focus {
+  border-bottom: 2px solid white;
+}
+
+input[type=email]:focus {
+  border-bottom: 2px solid white;
+}
+
+
+
+
 .external-links {
-  margin-top: 30px;
+  margin-top: 40px;
   background-color: silver;
 }
 
@@ -390,23 +431,18 @@ header {
 }
 
 .logos {
-  
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 50px;
 }
 
-.logos img {
-width: 40px;
-height: 40px;
-}
 
 .logos img:hover {
-animation-name: logos;
-animation-duration: 0.2s;
-animation-iteration-count: 2;
-animation-play-state:running;
+  animation-name: logos;
+  animation-duration: 0.2s;
+  animation-iteration-count: 2;
+  animation-play-state:running;
 }
 
 @keyframes logos {
@@ -419,4 +455,14 @@ animation-play-state:running;
 100% {
   transform: rotate(180deg);
 }
+}
+
+
+.contact-details {
+  text-align: center;
+  line-height: 3px;
+}
+
+.contact-details h3 {
+  font-weight: bolder;
 }
