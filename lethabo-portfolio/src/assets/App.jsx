@@ -44,6 +44,7 @@ export default function App () {
             </header>
 
             <div className="projects-section">
+                <h1>Selected Projects</h1>
                 <div className="slide-one">
                     <div className="project-number">
                         <img src="images/number-one.png" />
