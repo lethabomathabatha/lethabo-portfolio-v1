@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import * as Mui from '@mui/material';
+import { animated, useSpring } from '@react-spring/web'
 
 
 function WorkAvailability() {
@@ -9,9 +10,10 @@ function WorkAvailability() {
     const currentDay = currentDate.getDate();
   
     return (
-        <>
-        {`${currentMonth} ${currentDay}, Open To Work`}
-      </>
+        <div className="work-availability--date">
+        <h2>{currentMonth} {currentDay}</h2>
+        <span>Open To Work</span>
+      </div>
     );
   }
 
@@ -21,14 +23,18 @@ export default function App () {
             <header>
             <nav className="nav-bar">
                 <h4>Lethabo Mathabatha</h4>
-                <h4>UX/UI DESIGNER, DEVELOPER</h4>
+                <h4>DEVELOPER, UX/UI DESIGNER</h4>
+                <h4>{menuButtons}</h4>
                 
             </nav>
 
             <div className= "work-availability">
-                <Mui.Button variant="contained" color="primary">
+                <div className= "work-availability-button">
                     <WorkAvailability />
-                </Mui.Button>
+                </div>
+                {/* <Mui.TextField id="outlined-basic" label="Get In Touch" variant="outlined" />
+                <Mui.Button type="submit" variant="contained" size="small">Save</Mui.Button>
+                <Mui.Alert severity="info">Message cannot be empty</Mui.Alert> */}
             </div>
 
             <div className="hero-text">
@@ -62,7 +68,7 @@ export default function App () {
     );
 }
 
-const buttons = [
+const menuButtons = [
     <Mui.Button key="one">About</Mui.Button>,
     <Mui.Button key="two">Works</Mui.Button>,
     <Mui.Button key="three">Contact</Mui.Button>,
@@ -86,7 +92,7 @@ export function GroupOrientation() {
           aria-label="horizontal contained button group"
           variant="text"
         >
-          {buttons}
+          {menuButtons}
         </Mui.ButtonGroup>
       </Mui.Box>
     );

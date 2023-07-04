@@ -1,27 +1,65 @@
 body {
-  background-color: coral;
+  background-color: rgba(18, 8, 4, 0.368);
   font-family:'Courier New', Courier, monospace;
   display: flex;
   flex-direction: column;
   margin: 10px;
 }
 
+
+
 header {
   display: flex;
   flex-direction: column;
   position: relative;
-
+  background-color: yellow;
+  height: 100vh;
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 1; /* Initial opacity value */
+  filter: none; /* Initial filter value */
+  transition: opacity 0.5s, filter 0.5s; /* Transition effect for smooth change */
 }
+
+/*
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 1; 
+  filter: none; 
+  transition: opacity 0.5s, filter 0.5s; 
+}
+*/
+
+
+
+
 /* Navbar */
 nav {
-  background-color: #c2f3214b;
+  background-color: #ededed38;
   height: 10vh;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  border-bottom: 1px white solid;
-  padding: 0px 10px ;
-
+  align-items: center;
+  border-bottom: 1px solid white;
+  padding: 0px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  box-sizing: border-box;
+  color: white;
+  margin: 10px 10px 0px 10px
 }
 
 
@@ -62,7 +100,7 @@ nav {
   font-weight: bold;
   color: white;
   padding: 0px 30px ;
-  background-color: darkred;
+  /* background-color: darkred; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -70,13 +108,14 @@ nav {
 
 /* Work Availability */
 .work-availability {
-  background-color: #4CAF50;
+  /* background-color: #4CAF50;  */
   text-align: center;
   font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   padding: 40px;
   display: flex;
-  margin-top: 20px;
+  margin-top: 90px;
+  color: white;
 }
 
 
