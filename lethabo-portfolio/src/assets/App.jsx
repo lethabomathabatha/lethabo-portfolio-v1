@@ -4,6 +4,7 @@ import * as Mui from '@mui/material';
 import { animated, useSpring } from '@react-spring/web'
 
 
+// component
 function WorkAvailability() {
     const currentDate = new Date();
     const currentMonth = currentDate.toLocaleString('default', { month: 'short' });
@@ -17,25 +18,32 @@ function WorkAvailability() {
     );
   }
 
+
+//main script
 export default function App () {
+
+
     return (
-        <section>
-            <header>
+        <div className="main--container">
             <nav className="nav-bar">
-                <h4>Lethabo Mathabatha</h4>
+                <img src="./images/lethabo-logo.png" width="40px" alt="Lethabo Logo" />
+                {/* <h4>Lethabo Mathabatha</h4> */}
                 <h4>DEVELOPER, UX/UI DESIGNER</h4>
-                <h4>{menuButtons}</h4>
+                <h4>About  Works Contact</h4>
                 
             </nav>
 
-            <div className= "work-availability">
-                <div className= "work-availability-button">
-                    <WorkAvailability />
-                </div>
-                {/* <Mui.TextField id="outlined-basic" label="Get In Touch" variant="outlined" />
-                <Mui.Button type="submit" variant="contained" size="small">Save</Mui.Button>
-                <Mui.Alert severity="info">Message cannot be empty</Mui.Alert> */}
+
+            <header>
+            <div className="section--hero">
+              <h1 className="hero--text-title">Designer & Developer</h1>
+              <img src="/images/background.jpg" className="section--hero-image"></img>
+              <div className="work-availability">
+                <WorkAvailability />
+              </div>
             </div>
+
+            {/*  */}
 
             <div className="hero-text">
                 <p>I am passionate about transforming concepts into real life working solutions.
@@ -43,14 +51,36 @@ export default function App () {
                     Get In Touch
                 </Mui.Button>
                 </p>
-                
-                <h1>Designer & Developer</h1>
-                
+                                
             </div>
             </header>
 
+            <span className="projects--title">Selected Projects</span>
             <div className="projects-section">
-                <h1>Selected Projects</h1>
+                <div className="slide-one">
+                    <div className="project-number">
+                        <img src="images/number-one.png" />
+                    </div>
+        
+                    <h5>HTML, CSS, JavaScript, Netlify</h5>
+                    <img src="images/eunoia-project.jpg" alt="Eunoia Cinic Project" />
+                    <h2>The Eunoia Clinic</h2>
+                </div>
+            </div>
+
+            <div className="projects-section">
+                <div className="slide-one">
+                    <div className="project-number">
+                        <img src="images/number-one.png" />
+                    </div>
+        
+                    <h5>HTML, CSS, JavaScript, Netlify</h5>
+                    <img src="images/eunoia-project.jpg" alt="Eunoia Cinic Project" />
+                    <h2>The Eunoia Clinic</h2>
+                </div>
+            </div>
+
+            <div className="projects-section">
                 <div className="slide-one">
                     <div className="project-number">
                         <img src="images/number-one.png" />
@@ -63,7 +93,7 @@ export default function App () {
             </div>
 
             
-        </section>
+        </div>
         
     );
 }
