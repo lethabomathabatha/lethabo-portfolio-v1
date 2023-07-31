@@ -14,7 +14,7 @@ function WorkAvailability() {
         <div className="work-availability--date">
         <h2>{currentMonth} {currentDay}</h2>
         <span>Open To Work</span>
-      </div>
+        </div>
     );
   }
 
@@ -29,7 +29,15 @@ export default function App () {
                 <img src="./images/lethabo-logo.png" width="40px" alt="Lethabo Logo" />
                 {/* <h4>Lethabo Mathabatha</h4> */}
                 <h4>DEVELOPER, UX/UI DESIGNER</h4>
-                <h4>About  Works Contact</h4>
+                <div className="nav--menu-items">
+                    <a href="#about" style={{ textDecoration: "none" , color:"inherit"}} className="nav--menu-items">About </a>
+                    -
+                    <a href="#projects" style={{ textDecoration: "none" , color:"inherit"}}> work </a>
+                    - 
+                    <a href="#contact" style={{ textDecoration: "none" , color:"inherit"}}> Contact </a>
+                    - 
+                    <a href="#github" style={{ textDecoration: "none" , color:"inherit"}}> Github</a>
+                </div>
                 
             </nav>
 
@@ -41,17 +49,6 @@ export default function App () {
               <div className="work-availability">
                 <WorkAvailability />
               </div>
-            </div>
-
-            {/*  */}
-
-            <div className="hero-text">
-                <p>I am passionate about transforming concepts into real life working solutions.
-                <Mui.Button variant="contained" color="primary">
-                    Get In Touch
-                </Mui.Button>
-                </p>
-                                
             </div>
             </header>
 
