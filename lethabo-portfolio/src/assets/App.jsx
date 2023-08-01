@@ -26,9 +26,9 @@ export default function App () {
     return (
         <div className="main--container">
             <nav className="nav-bar">
-                <img src="./images/lethabo-logo.png" width="40px" alt="Lethabo Logo" />
+                <img src="./images/lethabo-logo-o-bg.png" width="60px" alt="Lethabo Logo" />
                 {/* <h4>Lethabo Mathabatha</h4> */}
-                <h4>DEVELOPER, UX/UI DESIGNER</h4>
+                {/*<h4 className="nav--bar-text">DEVELOPER, DESIGNER</h4> */}
                 <div className="nav--menu-items">
                     <a href="#about" style={{ textDecoration: "none" , color:"inherit"}} className="nav--menu-items">About </a>
                     -
@@ -51,6 +51,22 @@ export default function App () {
               </div>
             </div>
             </header>
+
+            <div className="about--section">
+              <h1 className="about--section-title">Designer & Developer</h1>
+              
+              <div className="about--section-text">
+                <span className="about--section-name">Lethabo Mathabatha</span>
+                <span className="about--section-paragraph">I’m an architectural technologist turned <strong>software developer</strong> from South Africa. You could say transforming concepts into beautiful, scalable, real-life working solutions is my thing. (And this is only beginning.) Let’s create something great together.</span>
+                <Mui.Button className="about--section-contact">contact</Mui.Button>
+              </div>
+            </div>
+
+
+
+
+
+
 
             <span className="projects--title">Selected Projects</span>
             <div className="projects-section">
