@@ -37,7 +37,7 @@ export default function App () {
                     - 
                     <a href="#contact" style={{ textDecoration: "none" , color:"inherit"}}> Contact </a>
                     - 
-                    <a href="#github" style={{ textDecoration: "none" , color:"inherit"}}> Github</a>
+                    <a href="https://github.com/lethabomathabatha" style={{ textDecoration: "none" , color:"inherit"}}> Github</a>
                 </div>
             </nav>
 
@@ -112,81 +112,43 @@ export default function App () {
                     </h2>
                 </div>
 
-            </div>
-
-
-
-
-
-
-            <div className="projects-section">
-                <div className="slide-one">
+                <div className="slide-two">
                     <div className="project-number">
-                        <img src="images/number-one.png" />
+                        <img src="images/number-two.png" />
                     </div>
         
-                    <h5>HTML, CSS, JavaScript, Netlify</h5>
+                    <h5>HTML, CSS, JavaScript, React</h5>
                     <img src="images/eunoia-project.jpg" alt="Eunoia Cinic Project" />
-                    <h2>The Eunoia Clinic</h2>
+                    <h2>Pods</h2>
+                </div>
+
+                <div className="slide-three">
+                    <div className="project-number">
+                        <img src="images/number-three.png" />
+                    </div>
+        
+                    <h5>HTML, CSS, JavaScript, React</h5>
+                    <img src="images/eunoia-project.jpg" alt="Eunoia Cinic Project" />
+                    <h2>Property Manager</h2>
                 </div>
             </div>
 
-            <div className="projects-section">
-                <div className="slide-one">
-                    <div className="project-number">
-                        <img src="images/number-one.png" />
-                    </div>
-        
-                    <h5>HTML, CSS, JavaScript, Netlify</h5>
-                    <img src="images/eunoia-project.jpg" alt="Eunoia Cinic Project" />
-                    <h2>The Eunoia Clinic</h2>
-                </div>
+            <div className="skills--section">
+              <span className="skills--section-header">Here's What I Use.</span>
+              
+              <img src="/images/background-two.jpg" alt="Backgroung Image" className="skills--section-image" />
+              <div className="skills--section-overlay">
+                JavaScript
+              </div>
             </div>
 
-            <div className="projects-section">
-                <div className="slide-one">
-                    <div className="project-number">
-                        <img src="images/number-one.png" />
-                    </div>
-        
-                    <h5>HTML, CSS, JavaScript, Netlify</h5>
-                    <img src="images/eunoia-project.jpg" alt="Eunoia Cinic Project" />
-                    <h2>The Eunoia Clinic</h2>
-                </div>
-            </div>
-
-            
+          <footer>
+            <p>designed & developed by lethabo mathabatha ~ 2023</p>
+          </footer>
         </div>
         
     );
 }
 
-const menuButtons = [
-    <Mui.Button key="one">About</Mui.Button>,
-    <Mui.Button key="two">Works</Mui.Button>,
-    <Mui.Button key="three">Contact</Mui.Button>,
-  ];
-  
 
-export function GroupOrientation() {
-    return (
-      <Mui.Box
-        sx={{
-          display: 'flex',
-          '& > *': {
-            m: 1,
-          },
-        }}
-      >
-       
-        
-        <Mui.ButtonGroup
-          orientation="horizontal"
-          aria-label="horizontal contained button group"
-          variant="text"
-        >
-          {menuButtons}
-        </Mui.ButtonGroup>
-      </Mui.Box>
-    );
-  }
+
