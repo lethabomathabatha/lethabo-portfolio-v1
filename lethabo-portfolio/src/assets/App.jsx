@@ -1,7 +1,6 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import * as Mui from '@mui/material';
-import { animated, useSpring } from '@react-spring/web'
+// import React from "react";
+// import ReactDOM from "react-dom";
+// import * as Mui from '@mui/material';
 import Button from '@mui/material/Button';
 
 
@@ -52,7 +51,7 @@ export default function App () {
               </div>
             </header>
 
-            <div className="about--section">
+            <div className="about--section" href="#about">
               <h1 className="about--section-title">Designer & Developer</h1>
               
               <div className="about--section-text">
@@ -66,32 +65,61 @@ export default function App () {
                 <br /> <br /> 
                 Let’s create something great together.
                 <br /> <br />
-                <Button 
-                  className="about--section-contact"
-                  variant="contained"
-                  
-                  href="#contact"
-                  size="large"
-                  sx={{
-                    backgroundColor: "white",
-                    color: "black",
-                    textTransform: "none",
-                    size: "large",
-                    fontSize: "2.3rem",
-                    fontFamily: "Epilogue, sans-serif",
-                    fontWeight: "800",
-                    border: "1px solid black",
-                    borderRadius: "3rem",
-                    "&:hover": {
-                      backgroundColor: "black",
-                      color: "white",
-                    }
-                  }}
-                >
-                contact
-                </Button>
+
+                <div className="about--section-buttons">
+                  <Button 
+                    className="about--section-contact"
+                    variant="contained"
+                    
+                    href="#contact"
+                    size="large"
+                    sx={{
+                      backgroundColor: "white",
+                      color: "black",
+                      textTransform: "none",
+                      size: "large",
+                      fontSize: "2.3rem",
+                      fontFamily: "Epilogue, sans-serif",
+                      fontWeight: "800",
+                      border: "1px solid black",
+                      borderRadius: "3rem",
+                      "&:hover": {
+                        backgroundColor: "black",
+                        color: "white",
+                      }
+                    }}
+                  >
+                  contact
+                  </Button>
+                    
+                  <Button 
+                    className="about--section-contact"
+                    variant="contained"
+                    
+                    href="#skills"
+                    size="large"
+                    sx={{
+                      backgroundColor: "white",
+                      color: "black",
+                      textTransform: "none",
+                      size: "large",
+                      fontSize: "2.3rem",
+                      fontFamily: "Epilogue, sans-serif",
+                      fontWeight: "800",
+                      border: "1px solid black",
+                      borderRadius: "3rem",
+                      "&:hover": {
+                        backgroundColor: "black",
+                        color: "white",
+                      }
+                    }}
+                  >
+                  skills
+                  </Button>
+                </div>
 
                 </span>
+
               </div>
             </div>
 
@@ -134,12 +162,22 @@ export default function App () {
             </div>
 
             <div className="skills--section">
-              <span className="skills--section-header">Here's What I Use.</span>
+              <span className="skills--section-header">Here is What I Use:</span>
               
-              <img src="/images/background-two.jpg" alt="Backgroung Image" className="skills--section-image" />
+              <div className="skills--section-container">
+                <img src="./icon _css3_.png" alt="CSS Icon" width={"40px"} /> 
+                <img src="./icon _html5_.png" alt="HTML Icon" width={"40px"} />
+                <img src="./icon _javascript_.png" alt="JavaScript Icon" width={"40px"} />
+                <img src="./icon _typescript_.png" alt="TypeScript Icon" width={"40px"} />
+                <img src="./icon _react_.png" alt="React Icon" width={"40px"} />
+                <img src="./icon _vue dot js_.png" alt="Vue Icon" width={"40px"} />
+                <img src="./icon _figma_.png" alt="Figma Icon" width={"30px"} />
+                <img src="./icon _github_.png" alt="Github Icon" width={"40px"} />
+              </div>
+              {/* <img src="/images/background-two.jpg" alt="Backgroung Image" className="skills--section-image" />
               <div className="skills--section-overlay">
                 JavaScript
-              </div>
+              </div> */}
             </div>
 
           <footer>
