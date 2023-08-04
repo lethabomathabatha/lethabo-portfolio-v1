@@ -34,7 +34,7 @@ export default function App () {
                 </div> */}
                
                 <div className="nav--menu-items">
-                    <a href="#about" style={{ textDecoration: "none" , color:"inherit"}} className="nav--menu-items">About </a>
+                    <a href="#about" style={{ textDecoration: "none" , color:"inherit"}} >About </a>
                     -
                     <a href="#projects" style={{ textDecoration: "none" , color:"inherit"}}> work </a>
                     - 
@@ -55,7 +55,7 @@ export default function App () {
               </div>
             </header>
 
-            <div className="about--section" href="#about">
+            <div className="about--section" id="about">
               <h1 className="about--section-title">Designer & Developer</h1>
               
               <div className="about--section-text">
@@ -82,7 +82,7 @@ export default function App () {
                       color: "black",
                       textTransform: "none",
                       size: "large",
-                      fontSize: "2.3rem",
+                      fontSize: "2rem",
                       fontFamily: "Epilogue, sans-serif",
                       fontWeight: "800",
                       border: "1px solid black",
@@ -107,7 +107,7 @@ export default function App () {
                       color: "black",
                       textTransform: "none",
                       size: "large",
-                      fontSize: "2.3rem",
+                      fontSize: "2rem",
                       fontFamily: "Epilogue, sans-serif",
                       fontWeight: "800",
                       border: "1px solid black",
@@ -127,10 +127,10 @@ export default function App () {
               </div>
             </div>
 
-            <div className="projects--section">
+            <div className="projects--section" id="projects">
               <span className="projects--section-header">Selected Projects</span>
 
-              <div className="slide-one">
+              <div className="project--slide">
                     <div className="project-number">
                         <img src="images/number-one.png" />
                     </div>
@@ -144,7 +144,7 @@ export default function App () {
                     </h2>
                 </div>
 
-                <div className="slide-two">
+                <div className="project--slide">
                     <div className="project-number">
                         <img src="images/number-two.png" />
                     </div>
@@ -154,7 +154,7 @@ export default function App () {
                     <h2>Pods</h2>
                 </div>
 
-                <div className="slide-three">
+                <div className="project--slide">
                     <div className="project-number">
                         <img src="images/number-three.png" />
                     </div>
@@ -165,7 +165,7 @@ export default function App () {
                 </div>
             </div>
 
-            <div className="skills--section">
+            <div className="skills--section" id='skills'>
               <div className="skills--section-header-wrapper">
                 <span className="skills--section-header">Here is What I Use. </span>
                 <span className="skills--section-header">Here is What I Use. </span>
@@ -214,7 +214,7 @@ export default function App () {
                 </div>
               </div>
               
-              <div className="contact--section">
+              <div className="contact--section" id="contact">
                 <span className="contact--section-header">Contact</span>
 
               
@@ -223,14 +223,13 @@ export default function App () {
                   className="contact--section-contact"
                   variant="contained"
                     
-                  href="#contact"
                   size="large"
                   sx={{
                     backgroundColor: "white",
                     color: "black",
                     textTransform: "none",
                     size: "large",
-                    fontSize: "2.3rem",
+                    fontSize: "2rem",
                     fontFamily: "Epilogue, sans-serif",
                     fontWeight: "800",
                     border: "1px solid black",
@@ -241,7 +240,7 @@ export default function App () {
                     }
                   }}
                   onClick={() => {
-                      
+                    window.open(`mailto:lethabomathabatha.m@gmail.com`, "_blank");
                   }}
                 >
                 email
@@ -250,15 +249,17 @@ export default function App () {
                 <Button 
                   className="contact--section-github"
                   variant="contained"
-                    
-                  href="#contact"
+                  onClick={() => {
+                    window.open("https://github.com/lethabomathabatha");
+                  }}
+                  
                   size="large"
                   sx={{
                     backgroundColor: "white",
                     color: "black",
                     textTransform: "none",
                     size: "large",
-                    fontSize: "2.3rem",
+                    fontSize: "2rem",
                     fontFamily: "Epilogue, sans-serif",
                     fontWeight: "800",
                     border: "1px solid black",
@@ -275,15 +276,17 @@ export default function App () {
                 <Button 
                   className="contact--section-linkedin"
                   variant="contained"
-                    
-                  href="#contact"
+                  onClick={() => {
+                      window.open("https://www.linkedin.com/in/lethabo-mathabatha-455a8b18a/", "_blank");
+                  }}
+                  
                   size="large"
                   sx={{
                     backgroundColor: "white",
                     color: "black",
                     textTransform: "none",
                     size: "large",
-                    fontSize: "2.3rem",
+                    fontSize: "2rem",
                     fontFamily: "Epilogue, sans-serif",
                     fontWeight: "800",
                     border: "1px solid black",
@@ -302,44 +305,13 @@ export default function App () {
                   <img src="./images/lethabo-logo-o-bg.png" alt="Lethabo Logo" className="contact--section-logo"/>
 
                   <span className="contact--section-paragraph">As a new developer, I am always open to opportunities 
-                    to learn from and to share my skills where I can - get in touch!</span>
+                    to learn from and to share my skills where I can - get in touch!
+                  </span>
 
                 </div>
               </div>
             </div>
 
-          {/* <div className="contact--section">
-            <img src="./images/lethabo-logo-o-bg.png" width="100px" alt="Lethabo Logo" />
-
-            
-
-
-
-                  <Button 
-                    className="contact--section-linkedin"
-                    variant="contained"
-                    
-                    href="#contact"
-                    size="large"
-                    sx={{
-                      backgroundColor: "white",
-                      color: "black",
-                      textTransform: "none",
-                      size: "large",
-                      fontSize: "2.3rem",
-                      fontFamily: "Epilogue, sans-serif",
-                      fontWeight: "800",
-                      border: "1px solid black",
-                      borderRadius: "3rem",
-                      "&:hover": {
-                        backgroundColor: "black",
-                        color: "white",
-                      }
-                    }}
-                  >
-                  linkedin
-                  </Button>
-          </div> */}
           <footer>
             <p>designed & developed by lethabo mathabatha | 2023</p>
           </footer>

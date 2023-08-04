@@ -74,10 +74,13 @@ header {
 .hero--text-title {
   font-family: 'Libre Barcode 128 Text', sans-serif;
   font-weight: 500;
-  top: 75%;
+  top: 90%;
+  transform: translate(0%, 100%);
+  position: absolute;
+  /* top: 75%;
   left: 0%;
   position: absolute; 
-  transform: translate(10%, 95%); 
+  transform: translate(10%, 95%);  */
   text-align: center;
   font-size: 50px;
   color: white;
@@ -120,19 +123,19 @@ header {
 
 .about--section-title {
   text-align: center;
-  font-family: 'Libre Barcode 128 Text', cursive;
+  font-family: 'Libre Barcode 128 Text', sans-serif;
   font-size: 50px;
   font-weight: 500;
   text-transform: lowercase;
-  left: 7%;
+  /* left: 7%;
   top: 100%;
   position: absolute; 
-  transform: translate(97%, 250%); 
+  transform: translate(97%, 250%);  */
   
 }
 
 .about--section-text {
-  margin-top: 9rem;
+  margin-top: 6rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
 
@@ -143,7 +146,8 @@ header {
   grid-template-columns: 1fr;
   gap: 0rem;
   text-transform: lowercase;
-  font-family: 'inria serif', serif;
+  /* font-family: 'inria serif', serif; */
+  font-family: 'Epilogue', sans-serif;
   justify-self: baseline;
   padding: 7rem;
   font-weight: 600;
@@ -172,9 +176,12 @@ header {
 
 .about--section-paragraph {
   font-size: 2rem;
-  font-family: 'Inria Serif', serif;
+  font-family: 'Epilogue', sans-serif;
   text-align: center;
   padding: 4rem 4rem 1rem 0rem;
+  line-height: 3rem;
+  letter-spacing: 0px;
+
 }
 
 .about--section-buttons {
@@ -203,7 +210,7 @@ header {
   }
 
 /* Slide one */
-.slide-one {
+.project--slide {
   display: flex;
   justify-content: center;
   background-color: var(--white);
@@ -218,7 +225,7 @@ header {
   box-shadow:  0 4px 8px 0 rgba(191, 190, 190, 0.2);
 }
 
-.slide-one img{
+.project--slide img{
   width: 200px;
   height: 340px;
   border-radius: 20px;
@@ -227,18 +234,18 @@ header {
   
 }
 
-.slide-one img:hover {
+.project--slide img:hover {
   opacity: 0;
 }
 
-.slide-one img:hover + img {
+.project--slide img:hover + img {
   opacity: 1;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.slide-one h5{
+.project--slide h5{
   writing-mode: vertical-lr;
   bottom: 0;
   right: 0;
@@ -250,7 +257,7 @@ header {
 
 }
 
-.slide-one h2{
+.project--slide h2{
   grid-column: 3/4;
   grid-row: 2;
   align-self: center;
@@ -263,132 +270,6 @@ header {
 }
 
 
-
-/*Slide 2*/
-
-.slide-two {
-  display: flex;
-  justify-content: center;
-  background-color: var(--white);
-  border-radius: 30px;
-  padding: 30px;
-  border: 2px solid black;
-  position: relative;
-  margin-top: 10rem;
-  width: 50vw;
-  color: var(--charcoal);
-  font-family: 'Epilogue', sans-serif;
-  box-shadow:  0 4px 8px 0 rgba(191, 190, 190, 0.2);
-
-}
-
-.slide-two img{
-  width: 200px;
-  height: 340px;
-  border-radius: 20px;
-  grid-column: 2 /3;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.slide-two img:hover {
-  opacity: 0;
-}
-
-.slide-two img:hover + img {
-  opacity: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.slide-two h5{
-  writing-mode: vertical-lr;
-  bottom: 0;
-  right: 0;
-  transform: translateX(100%); 
-  white-space: nowrap; 
-  grid-column: 1/2;
-  align-self: center;
-
-}
-
-.slide-two h2{
-  grid-column: 3/4;
-  grid-row: 2;
-  align-self: center;
-}
-
-/* Slide 3 */
-.slide-three {
-  display: flex;
-  justify-content: center;
-  background-color: var(--white);
-  border-radius: 30px;
-  padding: 30px;
-  border: 2px solid black;
-  position: relative;
-  margin-top: 10rem;
-  width: 50vw;
-  color: var(--charcoal);
-  font-family: 'Epilogue', sans-serif;
-  box-shadow:  0 4px 8px 0 rgba(191, 190, 190, 0.2);
-
-}
-
-.slide-three img{
-  width: 200px;
-  height: 340px;
-  border-radius: 20px;
-  grid-column: 2 /3;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.slide-three img:hover {
-  opacity: 0;
-}
-
-.slide-three img:hover + img {
-  opacity: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.slide-three h5{
-  writing-mode: vertical-lr;
-  bottom: 0;
-  right: 0;
-  transform: translateX(100%); 
-  white-space: nowrap; 
-  grid-column: 1/2;
-  align-self: center;
-
-}
-
-.slide-three h2{
-  grid-column: 3/4;
-  grid-row: 2;
-  align-self: center;
-}
-
-
-.main-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: rgb(111, 103, 103);
-  padding: 30px;
-  gap: 30px;
-}
-
-
-.projects-section {
-  /*center everything inside*/
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 90px;
-}
 
 
 
@@ -423,17 +304,18 @@ header {
 }
 
 .skills--section-header {
-  font-family: 'Inria Serif', serif;
+  font-family: 'Epilogue', sans-serif;
   text-transform: lowercase;
   font-size: 5rem;
   font-weight: 500;
-  -webkit-text-stroke: 1px var(--charcoal);
+  /* -webkit-text-stroke: 1.5px var(--charcoal) ; */
   color: var(--charcoal);
   display: inline-block;
   animation: slideRightToLeft 10s linear infinite;
   white-space: nowrap; 
   position: relative;
   padding: 30px 40px 10px 0px;
+  opacity: 20%;
 }
 
 .skills--section-header-wrapper {
@@ -451,9 +333,6 @@ header {
     transform: translateX(-50%);
   }
 }
-
-
-
 
 .skills--section-image {
   width: 600px;
@@ -483,8 +362,6 @@ header {
   gap: 0.5rem;
 }
 
-/* add on-hover effect to icons */
-
 .skills--section-icon:hover  {
   opacity: 0.6;
   transition: all 0.3s ease-in-out;
@@ -498,7 +375,7 @@ header {
 .contact--section{
   display: flex;
   flex-direction: column;
-  margin: 6rem 0rem 0rem 0rem;
+  margin: 5rem 0rem 0rem 0rem;
   width: 50%;
   padding: 2rem;
   gap: 2rem;
@@ -591,14 +468,12 @@ footer {
   font-weight: 500;
   top: 100%;
   left: 0%;
-  position: absolute; 
+  /* position: absolute;  */
   transform: translate(0%, 100%); 
   text-align: center;
   font-size: 30px;
   color: white;
   text-transform: lowercase;
-
-  
 }
 
 
@@ -642,19 +517,13 @@ footer {
     font-weight: 500;
     text-transform: lowercase;
     left: 0;
-    top: 120%;
-    position: absolute;
-    transform: translate(10%, -70%);
-    
-    /* left: 7%; */
-    /* top: 100%; */
-    /* position: absolute;  */
-    /* transform: translate(97%, 250%);  */
-    
+    top: 0%;
+    /* position: absolute; */
+    transform: translate(0%, 0%);    
   }
 
   .about--section-text {
-    margin-top: 9rem;
+    margin-top: 0rem;
     display: flex;
     flex-direction: column;
   }
@@ -675,7 +544,7 @@ footer {
 
 
   .about--section-name1 {
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     align-self: center;
   }
@@ -684,7 +553,9 @@ footer {
     font-size: 1rem;
     font-family: 'Epilogue', sans-serif;
     text-align: center;
-    padding:0.9rem;
+    padding: 1rem;
+    line-height: 1rem;
+
   }
 
   .about--section-buttons {
@@ -713,7 +584,7 @@ footer {
 
 
 /* Slide one */
-.slide-one {
+.project--slide {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -730,7 +601,7 @@ footer {
   box-shadow:  0 4px 8px 0 rgba(191, 190, 190, 0.2);
 }
 
-.slide-one img{
+.project--slide img{
   max-height: 100%;
   /* height: 0%; */
   transition: opacity 0.5s ease-in-out;
@@ -738,7 +609,7 @@ footer {
 }
 
 
-.slide-one h5{
+.project--slide h5{
   writing-mode: horizontal-tb;
   bottom: 0;
   right: 0;
@@ -750,104 +621,12 @@ footer {
 
 }
 
-.slide-one h2{
+.project--slide h2{
   /* grid-column: 1/2; */
   /* grid-row: 1/2; */
   align-self: center;
   padding-left: 0rem;
 }
-
-
-/* slide 2 */
-.slide-two {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--white);
-  border-radius: 20px;
-  padding: 20px;
-  border: none;
-  position: relative;
-  margin-top: 5rem;
-  width: 50vw;
-  color: var(--charcoal);
-  font-family: 'Epilogue', sans-serif;
-  box-shadow:  0 4px 8px 0 rgba(191, 190, 190, 0.2);
-}
-
-.slide-two img{
-  width: 200px;
-  /* height: 0%; */
-  border-radius: 20px;
-  grid-column: 2 /3;
-  transition: opacity 0.5s ease-in-out;
-  
-}
-
-
-.slide-two h5{
-  writing-mode: horizontal-tb;
-  bottom: 0;
-  right: 0;
-  transform: translateX(0%); 
-}
-
-.slide-two h2{
-
-  align-self: center;
-  padding-left: 0rem;
-}
-
-/* slide 3 */
-.slide-three {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--white);
-  border-radius: 20px;
-  padding: 20px;
-  border: none;
-  position: relative;
-  margin-top: 5rem;
-  width: 50vw;
-  color: var(--charcoal);
-  font-family: 'Epilogue', sans-serif;
-  box-shadow:  0 4px 8px 0 rgba(191, 190, 190, 0.2);
-}
-
-.slide-three img{
-  width: 200px;
-  /* height: 0%; */
-  border-radius: 20px;
-  grid-column: 2 /3;
-  transition: opacity 0.5s ease-in-out;
-  
-}
-
-
-.slide-three h5{
-  writing-mode: horizontal-tb;
-  bottom: 0;
-  right: 0;
-  transform: translateX(0%); 
-  /* white-space: nowrap;  */
-  /* grid-column: 1/1; */
-  /* align-self: center; */
-  /* font-weight: 600; */
-
-}
-
-.slide-three h2{
-  /* grid-column: 1/2; */
-  /* grid-row: 1/2; */
-  align-self: center;
-  padding-left: 0rem;
-}
-
-
-
 
 
 .projects--section-paragraph {
