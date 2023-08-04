@@ -174,7 +174,7 @@ export default function App () {
               
               <div className="skills--section-container">
                 <div className="icon-container">
-                  <img src="./icon _css3_.png" alt="CSS Icon" width={"40px"} className="skills--section-icon"/>
+                  <img src="./icon _css3_.png" alt="CSS Icon"  className="skills--section-icon"/>
                   <span>CSS</span>
                 </div>
 
