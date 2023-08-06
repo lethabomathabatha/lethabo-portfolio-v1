@@ -134,14 +134,29 @@ export default function App () {
                     <div className="project-number">
                         <img src="images/number-one.png" />
                     </div>
-        
+                    
                     <h5>HTML, CSS, TypeScript, Vue</h5>
-                    <img src="images/eunoia-project.jpg" alt="SpoonFed Project" style={{backgroundColor:"var(--charcoal)"}}/>
-                    <h2>SpoonFed
-                    <br/>
-                    {/* <span className="projects--section-paragraph">SpoonFeed is a platform that gives you recipes based on the ingredients you have.</span> */}
+                    
+                    <div className='image-container'>
+                      <img src="images/eunoia-project.jpg" alt="SpoonFed Project" style={{backgroundColor:"var(--charcoal)"}}/>
+                      {/* <h3>SpoonFed</h3> */}
+                      <div className='projects--section-overlay'>
+                        <h2>SpoonFed</h2>
+                        <span className="projects--section-paragraph">SpoonFeed is a platform that gives you recipes based on the ingredients you have.</span>
+                        <Button variant="" 
 
-                    </h2>
+                          className="projects--section-button"
+                          onClick={() => window.open("https://spoonfed.vercel.app")}
+                          sx={{
+                            color: "white",
+                            border: "2px solid white",
+                            backgroundColor: "var(--charcoal)",
+                          }}
+                        >Visit</Button>
+                      </div>
+                    
+                    <br/>
+                  </div>
                 </div>
 
                 <div className="project--slide">
@@ -150,8 +165,25 @@ export default function App () {
                     </div>
         
                     <h5>HTML, CSS, JavaScript, React</h5>
-                    <img src="images/eunoia-project.jpg" alt="Eunoia Cinic Project" />
-                    <h2>Pods</h2>
+
+                    <div className='image-container'>
+                      <img src="./public/pods-image.png" alt="Pods App Image" />
+                      <div className='projects--section-overlay'>
+                        <h2>Pods</h2>
+                        <span className="projects--section-paragraph">Pods is a mock podcast platform that allows you to browse and play podcasts from an api.</span>
+                      
+                        <Button variant="" 
+                          className="projects--section-button"
+                          onClick={() => window.open("https://podsapp.netlify.app")}
+                          sx={{
+                            color: "white",
+                            border: "2px solid white",
+                            backgroundColor: "var(--light-purple)",
+                          }}
+                        >Visit</Button>
+                      </div>
+                      
+                    </div>
                 </div>
 
                 <div className="project--slide">
@@ -160,8 +192,25 @@ export default function App () {
                     </div>
         
                     <h5>HTML, CSS, JavaScript, React</h5>
-                    <img src="images/eunoia-project.jpg" alt="Eunoia Cinic Project" />
-                    <h2>Property Manager</h2>
+
+                    <div className='image-container'>
+                      <img src="images/eunoia-project.jpg" alt="Eunoia Cinic Project" />
+
+                      <div className='projects--section-overlay'>
+                        <h2>AAA Property Manager</h2>
+                        <span className="projects--section-paragraph">Eunoia is a platform that allows you to manage your properties.</span>
+
+                        <Button variant="" 
+                          className="projects--section-button"
+                          onClick={() => window.open("https://aluveapp.co.za")}
+                          sx={{
+                            color: "white",
+                            border: "2px solid white",
+                            backgroundColor: "var(--light-purple)",
+                          }}
+                        >Visit</Button>
+                      </div>
+                    </div>
                 </div>
             </div>
 

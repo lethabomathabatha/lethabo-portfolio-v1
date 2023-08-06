@@ -3,6 +3,7 @@
   --white: #ffffff;
   --rusty-brown: #B54328;
   --light-grey: #BCACA8;
+  --light-purple: #a494b0;
 }
 
 
@@ -29,6 +30,7 @@ nav {
   font-weight: 500;
   text-transform: lowercase;
   font-size: 1.2rem;
+  
 }
 
 .nav--menu-items {
@@ -229,8 +231,8 @@ header {
 }
 
 .project--slide img{
-  width: 200px;
-  height: 340px;
+  /* width: 200px; */
+  height: 350px;
   border-radius: 20px;
   transition: opacity 0.5s ease-in-out;
   
@@ -291,6 +293,42 @@ header {
   opacity: 0.5;
 }
 
+.project--slide .image-container {
+  position: relative;
+  height: 350px;
+}
+
+.project--slide .projects--section-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.686);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  gap: 1rem;
+}
+
+.project--slide .projects--section-overlay:hover {
+  opacity: 1;
+}
+
+.project--slide h2 {
+  color: white;
+}
+
+.projects--section-paragraph {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  padding: 8px;
+}
 
 /*Skills Section*/
 .skills--section {
