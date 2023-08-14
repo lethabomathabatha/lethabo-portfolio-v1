@@ -325,6 +325,11 @@ header {
   padding: 8px;
 }
 
+.projects--section-overlay h2 {
+  text-align: center;
+  padding: 10px;
+}
+
 /*Skills Section*/
 .skills--section {
   height: 100vh;
@@ -482,7 +487,7 @@ footer {
     max-width: 100%;
     align-items: center;
     justify-content: center;
-    padding-top: 0%;
+    padding: 0px 0px 0px 0px;
   }
 
   .section--hero {

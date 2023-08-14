@@ -27,11 +27,8 @@ export default function App () {
     return (
         <div className="main--container">
             <nav>
-                <img src="./images/lethabo-logo-o-bg.png" width="90px" alt="Lethabo Logo" />
+                <img src="./public/lethabo-logo-o-bg.png" width="90px" alt="Lethabo Logo" />
 
-                {/* <div className="menu-icon" onClick={toggleMenu()}>
-                  <img src="/public/icon _Line Horizontal 3_.png" width={"40px"} alt='menu icon'></img> 
-                </div> */}
                
                 <div className="nav--menu-items">
                     <a href="#about" style={{ textDecoration: "none" , color:"inherit"}} >About </a>
@@ -48,7 +45,7 @@ export default function App () {
             <header>
               <div className="section--hero">
                 <h1 className="hero--text-title">Designer & Developer</h1>
-                <img src="/images/background.jpg" className="section--hero-image"></img>
+                <img src="./public/background.jpg" className="section--hero-image"></img>
                 <div className="work-availability">
                   <WorkAvailability />
                 </div>
@@ -62,7 +59,7 @@ export default function App () {
                   <span className="about--section-name">
                     <span className="about--section-name1">Lethabo</span>
                     {/* <span className="about--section-name2">Mathabatha</span> */}
-                    <img src="./images/arrow.png" alt="arrow" className="about--section-arrow"/>
+                    <img src="./public/arrow.png" alt="arrow" className="about--section-arrow"/>
                   </span>
 
                 <span className="about--section-paragraph">I’m an architectural technologist turned <strong>software developer</strong> from South Africa. You could say transforming concepts into beautiful, scalable, real-life working solutions is my thing. (And this is only beginning.) 
@@ -132,7 +129,7 @@ export default function App () {
 
                   <div className="project--slide">
                     <div className="project-number">
-                        <img src="images/number-one.png" />
+                        <img src="./public/number-one.png" />
                     </div>
         
                     <h5>HTML, CSS, JavaScript, React</h5>
@@ -161,7 +158,7 @@ export default function App () {
 
               <div className="project--slide">
                     <div className="project-number">
-                        <img src="images/number-two.png" />
+                        <img src="./public/number-two.png" />
                     </div>
                     
                     <h5>HTML, CSS, TypeScript, React</h5>
@@ -193,7 +190,7 @@ export default function App () {
 
                 <div className="project--slide">
                     <div className="project-number">
-                        <img src="images/number-three.png" />
+                        <img src="./public/number-three.png" />
                     </div>
         
                     <h5>HTML, CSS, JavaScript, React</h5>
@@ -358,7 +355,7 @@ export default function App () {
                 </div>
 
                 <div className="contact--section-logo-wrapper">
-                  <img src="./images/lethabo-logo-o-bg.png" alt="Lethabo Logo" className="contact--section-logo"/>
+                  <img src="./public/lethabo-logo-o-bg.png" alt="Lethabo Logo" className="contact--section-logo"/>
 
                   <span className="contact--section-paragraph">As a new developer, I am always open to opportunities 
                     to learn from and to share my skills where I can - get in touch!
