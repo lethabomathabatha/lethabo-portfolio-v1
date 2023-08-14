@@ -130,38 +130,9 @@ export default function App () {
             <div className="projects--section" id="projects">
               <span className="projects--section-header">Selected Projects</span>
 
-              <div className="project--slide">
+                  <div className="project--slide">
                     <div className="project-number">
                         <img src="images/number-one.png" />
-                    </div>
-                    
-                    <h5>HTML, CSS, TypeScript, Vue</h5>
-                    
-                    <div className='image-container'>
-                      <img src="images/eunoia-project.jpg" alt="SpoonFed Project" style={{backgroundColor:"var(--charcoal)"}}/>
-                      {/* <h3>SpoonFed</h3> */}
-                      <div className='projects--section-overlay'>
-                        <h2>SpoonFed</h2>
-                        <span className="projects--section-paragraph">SpoonFeed is a platform that gives you recipes based on the ingredients you have.</span>
-                        <Button variant="" 
-
-                          className="projects--section-button"
-                          onClick={() => window.open("https://spoonfed.vercel.app")}
-                          sx={{
-                            color: "white",
-                            border: "2px solid white",
-                            backgroundColor: "var(--charcoal)",
-                          }}
-                        >Visit</Button>
-                      </div>
-                    
-                    <br/>
-                  </div>
-                </div>
-
-                <div className="project--slide">
-                    <div className="project-number">
-                        <img src="images/number-two.png" />
                     </div>
         
                     <h5>HTML, CSS, JavaScript, React</h5>
@@ -186,6 +157,40 @@ export default function App () {
                     </div>
                 </div>
 
+
+
+              <div className="project--slide">
+                    <div className="project-number">
+                        <img src="images/number-two.png" />
+                    </div>
+                    
+                    <h5>HTML, CSS, TypeScript, React</h5>
+                    
+                    <div className='image-container'>
+                      <img src="./public/spoonfed-image.png" alt="SpoonFed Project" style={{backgroundColor:"var(--charcoal)"}}/>
+                      {/* <h3>SpoonFed</h3> */}
+                      <div className='projects--section-overlay'>
+                        <h2>SpoonFed</h2>
+                        <span className="projects--section-paragraph">SpoonFeed is a platform that gives you recipes based on the ingredients you have. 
+                          <br/> <br/> Spoonfed utilizes Edamam's API to search for recipes and specific meals, and it features built-in food type filters for quick finds.</span>
+
+                        <Button variant="" 
+                          className="projects--section-button"
+                          sx={{
+                            color: "white",
+                            border: "2px solid white",
+                            backgroundColor: "var(--charcoal)",
+                          }}
+                        >Coming 18/09/23</Button>
+                      </div>
+                     
+                    
+                    <br/>
+                  </div>
+                </div>
+
+                
+
                 <div className="project--slide">
                     <div className="project-number">
                         <img src="images/number-three.png" />
@@ -194,21 +199,23 @@ export default function App () {
                     <h5>HTML, CSS, JavaScript, React</h5>
 
                     <div className='image-container'>
-                      <img src="images/eunoia-project.jpg" alt="Eunoia Cinic Project" />
+                      <img src="./public/property-manager-image.png" alt="Aluve Property Manager Project" />
 
                       <div className='projects--section-overlay'>
-                        <h2>AAA Property Manager</h2>
-                        <span className="projects--section-paragraph">Eunoia is a platform that allows you to manage your properties.</span>
+                        <h2>Aluve App Property Manager</h2>
+                        <span className="projects--section-paragraph">Aluve App is a platform that helps property owners & managers run their properties.
+                          <br />Aluve App features lease, maintenance, and rent management for both property manager & tenant.
+                        </span>
 
                         <Button variant="" 
                           className="projects--section-button"
-                          onClick={() => window.open("https://aluveapp.co.za")}
+                        
                           sx={{
                             color: "white",
                             border: "2px solid white",
                             backgroundColor: "var(--light-purple)",
                           }}
-                        >Visit</Button>
+                        >Coming Sep 2023</Button>
                       </div>
                     </div>
                 </div>
